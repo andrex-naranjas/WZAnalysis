@@ -1,0 +1,35 @@
+//CutFlowMaker includes
+#ifndef CUTFLOWMAKER_H
+#define CUTFLOWMAKER_H
+
+#include "ConfigSettings.h"
+
+#include <string>
+#include <vector>
+#include <iostream>
+
+
+class CutFlowMaker{
+
+ public:
+  CutFlowMaker();
+  virtual ~CutFlowMaker();
+
+  virtual void initialize(Config config);
+  virtual void execute(std::vector<std::vector<std::string>> samplesRun);
+
+ private:
+  virtual void sumFiles(std::vector<std::vector<std::string>> samplesRun);
+  virtual void loadValues(std::vector<std::vector<std::string>> samplesRun);
+  virtual void latexConvertor(std::vector<std::vector<long int>> totalValues, std::vector<std::string> names);
+
+  std::string wzchannel;
+  std::string dirYear;
+  std::string fileDir;
+  
+  std::vector<std::vector<long int>> totalFlow;
+  std::vector<std::string> names;
+  
+};
+
+#endif

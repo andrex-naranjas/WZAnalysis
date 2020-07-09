@@ -1,0 +1,83 @@
+NormPlots = True
+DoPlots = False
+DoOnlyPlots = True
+
+DataYears = 2015+2016
+
+InputFileDir = /data/morales/atlas/Nov2018/mc16a/
+OutputFileDir = /data/morales/atlas/r21ControlPlots/
+	     
+NumberOfEvents = -1
+
+DoCwFactor = False
+DoCrossSection = False
+TruthAnalysis = True
+
+DoMultijet = True
+MultiFitRegion = Signal
+MultijetVariation = xSecdown
+OnlyMultijetResults = False
+
+Dod0Cut = True
+Applyd0Weight = True
+Nod0Shift = False
+
+xBinsCw = 40000 45000 50000 55000 60000 65000 70000 200000 
+
+OnlyMC = True
+OnlyData = False
+OnlyInclusive = True
+
+WZSelection = wplus
+
+WChannel = True
+ZChannel  = True
+TopChannel = True
+DibosonChannel = True
+
+MuFlavor = True
+TauFlavor = True
+
+CutFlowName = 
+
+HasRecoilInfo = False
+
+OnTheFlyPileUp = False
+
+SETCalibration = False
+RecoilCalibFileDir = /data/morales/atlas/HadRecoilCalib/FullCalibration_15p16.root
+PRWFile = /users/morales/ATLAS/ControlPlots2018/Plots/PRWFiles/prwTree_zmumu_opt.root
+
+InsituCorrection = False
+ResolResponse = False
+
+TruthMatching = True
+RecoMatching = True
+
+Systematics = False
+SFVariations = False
+RecoilBG = False
+
+SysInplots = 1
+PlotMulti = 0
+PlotData = 1
+PlotZmumu = 1
+PlotZtautau = 1
+PlotWplusTaunu = 1
+PlotWplusMunu = 1
+PlotWminTaunu = 1
+PlotWminMunu = 1
+PlotTtbar = 1
+PlotWt_top = 1
+PlotWt_antitop = 1
+PlotSingle_top = 1
+PlotSingle_antitop = false    
+PlotZzqqll = 1
+PlotWwqqll = 1
+PlotWwpqqmlnu = 1
+PlotWwplnumqq = 1
+PlotWzlnuqq = 1
+PlotZzllll = 1
+PlotWzlnull = 1
+PlotWzlnununu = 1
+PlotZzllnunu = 1
